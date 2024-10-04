@@ -107,3 +107,33 @@ body {
   margin-left: 5px;
   font-size: 18px;
 }
+
+/* -----------hero section------------- */
+.hero-container {
+  height: calc(100% - 95px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hello-text {
+  font-size: 120px;
+  font-weight: 400;
+  color: white;
+  line-height: 135px;
+}
+
+.hero-title {
+  font-size: 84px;
+  font-weight: 600;
+  color: white;
+  line-height: 92px;
+  margin-bottom: 10px;
+}
+
+.hero-job-name {
+  font-size: 26px;
+  font-weight: 500;
+  color: white;
+  line-height: 30px;
+}
