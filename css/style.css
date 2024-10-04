@@ -1,0 +1,44 @@
+/* universal styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+/* body */
+
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+/* project variables */
+
+:root {
+  --primary-color: #00d7bb;
+  --background-second: #313741;
+  --background-first: #22252c;
+  --normal-text: white;
+  --para-color: #f5eada;
+}
+
+/* common styles */
+
+.container {
+  width: 1170px;
+  margin: 0 auto;
+}
+
+.section-title {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 50px;
+}
+
+.para {
+  font-size: 15px;
+  font-weight: 300;
+  color: var(--para-color);
+  line-height: 26px;
+}
