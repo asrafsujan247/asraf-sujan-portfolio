@@ -19,7 +19,7 @@ body {
   --background-second: #313741;
   --background-first: #22252c;
   --normal-text: white;
-  --para-color: #f5eada;
+  --para-color: #f8f6f2;
 }
 
 /*--------------- common styles---------------- */
@@ -32,8 +32,11 @@ body {
 .section-title {
   font-size: 45px;
   font-weight: 700;
-  color: var(--primary-color);
   line-height: 50px;
+  background: #45be79;
+  background: linear-gradient(to right, #45be79 0%, #2ce0d6 47%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .para {
@@ -41,6 +44,21 @@ body {
   font-weight: 300;
   color: var(--para-color);
   line-height: 26px;
+}
+.btn {
+  font-size: 14px;
+  font-weight: 700;
+  color: white;
+  line-height: 26px;
+  padding: 15px 20px;
+  background: rgb(68, 189, 120);
+  background: linear-gradient(
+    135deg,
+    rgba(68, 189, 120, 1) 1%,
+    rgba(40, 221, 213, 1) 53%
+  );
+  border: none;
+  box-shadow: rgba(40, 221, 213, 1) 0px 5px 15px;
 }
 
 /* ---------------header section -----------------*/
@@ -110,7 +128,7 @@ body {
 
 /* -----------hero section------------- */
 .hero-container {
-  height: calc(100% - 95px);
+  height: calc(100% - 95.4px);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -136,4 +154,70 @@ body {
   font-weight: 500;
   color: white;
   line-height: 30px;
+}
+
+/* ------------------about section------------- */
+
+.about-area {
+  background-color: var(--background-first);
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.about-area-container {
+  display: flex;
+  align-items: center;
+}
+
+.about-area-container > * {
+  flex: 1;
+}
+
+.about-left {
+  position: relative;
+}
+
+.about-image {
+  width: 365px;
+  height: 385px;
+  object-fit: contain;
+  position: relative;
+  z-index: 1000;
+  background: rgb(17, 18, 18);
+  background: linear-gradient(
+    0deg,
+    rgba(17, 18, 18, 1) 4%,
+    rgba(37, 35, 35, 1) 64%
+  );
+}
+
+.border-line {
+  width: 365px;
+  height: 385px;
+  border: 7px solid var(--primary-color);
+  position: absolute;
+  top: -50px;
+  left: 50px;
+  z-index: 10;
+}
+
+.about-description {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about-detail {
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+.about-detail-highlight {
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.resume-btn {
+  margin-left: 278px;
 }
