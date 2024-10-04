@@ -1,4 +1,4 @@
-/* universal styles */
+/* ----------------universal styles----------------- */
 * {
   margin: 0;
   padding: 0;
@@ -6,13 +6,13 @@
   scroll-behavior: smooth;
 }
 
-/* body */
+/*-------------------- body ------------------------*/
 
 body {
   font-family: "Open Sans", sans-serif;
 }
 
-/* project variables */
+/* ---------------------project variables -----------------*/
 
 :root {
   --primary-color: #00d7bb;
@@ -22,7 +22,7 @@ body {
   --para-color: #f5eada;
 }
 
-/* common styles */
+/*--------------- common styles---------------- */
 
 .container {
   width: 1170px;
@@ -41,4 +41,44 @@ body {
   font-weight: 300;
   color: var(--para-color);
   line-height: 26px;
+}
+
+/* ---------------header section -----------------*/
+.header {
+  background: rgb(69, 193, 124);
+  background-image: url(/images/hero-banner.jpg),
+    linear-gradient(90deg, rgba(69, 193, 124, 1) 11%, rgba(44, 225, 216, 1) 42%);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-blend-mode: overlay;
+}
+/*-----------------------navbar section------------------- */
+
+.nav-section-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 50px;
+}
+
+.nav-title {
+  font-size: 30px;
+  line-height: 30px;
+  font-weight: 700;
+  color: white;
+}
+
+.nav-lists {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+.nav-link {
+  font-size: 20px;
+  font-weight: 500;
+  color: white;
+  text-decoration: none;
+  margin-right: 30px;
 }
