@@ -33,10 +33,11 @@ body {
   font-size: 45px;
   font-weight: 700;
   line-height: 50px;
-  background: #45be79;
-  background: linear-gradient(to right, #45be79 0%, #2ce0d6 47%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(to right, #45be79 0%, #2ce0d6 47%);
+  background-clip: text;
+  color: transparent;
+  width: min-content;
+  text-wrap: nowrap;
 }
 
 .para {
@@ -220,4 +221,61 @@ body {
 
 .resume-btn {
   margin-left: 278px;
+}
+
+/* -------------education section------------- */
+
+.education-area {
+  background-color: var(--background-second);
+  padding-bottom: 120px;
+}
+
+.education-title-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.education-title {
+  width: min-content;
+}
+
+.certificate {
+  display: flex;
+}
+
+.certificate > * {
+  flex: 1;
+  padding: 75px 50px;
+}
+
+.certificate-details {
+  text-align: end;
+  border-right: 5px solid var(--primary-color);
+}
+
+.certificate-title {
+  font-size: 27px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+
+.education-period {
+  font-size: 16px;
+  font-weight: 400;
+  color: white;
+  margin-top: 8px;
+}
+
+.certificate-text-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.circle-dot {
+  position: absolute;
+  left: -18px;
+  color: #00d7bb;
 }
