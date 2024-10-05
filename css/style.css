@@ -60,6 +60,7 @@ body {
   );
   border: none;
   box-shadow: rgba(40, 221, 213, 1) 0px 5px 15px;
+  cursor: pointer;
 }
 
 /* ---------------header section -----------------*/
@@ -70,6 +71,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 100vh;
+  background-attachment: fixed;
   background-blend-mode: overlay;
 }
 /*-----------------------navbar section------------------- */
@@ -330,4 +332,49 @@ body {
 
 .skill-progress::-webkit-progress-value {
   background-color: var(--primary-color);
+}
+
+/* ------------experience section -------------*/
+
+.experience-area {
+  background-color: var(--background-second);
+  padding-bottom: 90px;
+}
+
+.experience-title-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.experiences-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.experience {
+  width: 450px;
+  margin-bottom: 40px;
+  border-bottom: 2px solid var(--primary-color);
+}
+
+.office-image {
+  width: 100%;
+}
+
+.office-name {
+  font-size: 17px;
+  font-weight: 700;
+  color: var(--primary-color);
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.experience-duration {
+  font-size: 14px;
+  font-weight: 400;
+  color: white;
+  margin-bottom: 15px;
 }
