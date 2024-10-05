@@ -378,3 +378,169 @@ body {
   color: white;
   margin-bottom: 15px;
 }
+
+/* ----------projects section-------------- */
+
+.projects-title-container {
+  background-color: var(--background-first);
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  justify-content: center;
+}
+
+.projects-section-container {
+  background-color: #06b990;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.project {
+  width: 500px;
+  position: relative;
+}
+
+.project-image {
+  width: 100%;
+  object-fit: contain;
+}
+
+.project:hover > .project-details-and-link {
+  opacity: 1;
+  box-shadow: 1px 6px 24px #3e3e3e;
+  transition: all 0.4s ease-in-out 0.001s;
+}
+
+.project-details-and-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  z-index: 1000;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.911);
+  opacity: 0;
+  border: 10px solid #a6bcc0;
+}
+
+.project-name {
+  font-size: 30px;
+  font-weight: 700;
+  color: #00d7bb;
+  margin-bottom: 12px;
+}
+
+.project-btn {
+  background-color: #00d7bb;
+  padding: 8px 12px;
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+  border: none;
+}
+
+.project-btn:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* -------------contact section------------- */
+
+.contact-area {
+  background-color: var(--background-first);
+  padding-bottom: 100px;
+}
+
+.contact-title-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  padding-bottom: 80px;
+}
+
+.contact-name-email-container {
+  display: flex;
+  gap: 40px;
+  margin-bottom: 30px;
+}
+
+.name,
+.email,
+.message {
+  width: 100%;
+}
+
+.name-input,
+.email-input,
+.message-field {
+  width: 100%;
+  background-color: var(--background-first);
+  border-bottom: 3px solid gray;
+  color: white;
+}
+
+.name-input:focus,
+.email-input:focus,
+.message-field:focus {
+  border-bottom: 3px solid var(--primary-color);
+  outline: none;
+}
+
+.name-input,
+.email-input {
+  height: 30px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.message-field {
+  height: 200px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+label {
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.send-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.send-message-btn {
+  padding: 20px 30px;
+  background-color: transparent;
+  border: 1px solid var(--primary-color);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--primary-color);
+}
+
+.send-message-btn:hover {
+  color: white;
+  background: rgb(68, 189, 120);
+  background: linear-gradient(
+    135deg,
+    rgba(68, 189, 120, 1) 1%,
+    rgba(40, 221, 213, 1) 53%
+  );
+  box-shadow: rgba(40, 221, 213, 1) 0px 5px 15px;
+  cursor: pointer;
+}
