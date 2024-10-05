@@ -279,3 +279,55 @@ body {
   left: -18px;
   color: #00d7bb;
 }
+
+/* ----------- expertise section-------------- */
+
+.expertise-area {
+  background-color: var(--background-first);
+  padding-bottom: 140px;
+}
+
+.expertise-title-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 120px;
+  padding-bottom: 100px;
+}
+
+.expertise-container {
+  display: flex;
+  gap: 80px;
+}
+
+.expertise-container > * {
+  flex: 1;
+}
+
+.skill {
+  padding: 30px 15px;
+}
+
+.skill-details {
+  display: flex;
+  justify-content: space-between;
+}
+.skill-title {
+  font-size: 19px;
+  font-weight: 600;
+  color: white;
+}
+.skill-percentage {
+  font-size: 15px;
+  font-weight: 400;
+  color: white;
+}
+
+.skill-progress {
+  width: 100%;
+  height: 6px;
+  background-color: gray;
+}
+
+.skill-progress::-webkit-progress-value {
+  background-color: var(--primary-color);
+}
