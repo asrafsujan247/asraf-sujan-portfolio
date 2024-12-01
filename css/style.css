@@ -113,7 +113,7 @@ body {
 /* ---------------header section -----------------*/
 .header {
   background: rgb(69, 193, 124);
-  background-image: url(/images/hero-banner.jpg),
+  background-image: url(../images/hero-banner.jpg),
     linear-gradient(90deg, rgba(69, 193, 124, 1) 11%, rgba(44, 225, 216, 1) 42%);
   background-repeat: no-repeat;
   background-size: cover;
